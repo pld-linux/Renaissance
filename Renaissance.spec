@@ -2,7 +2,7 @@ Summary:	GNUstep Renaissance library
 Summary(pl):	Biblioteka GNUstep Renaissance
 Name:		Renaissance
 Version:	0.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.gnustep.it/Renaissance/Download/%{name}-%{version}.tar.gz
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		gscpu		ix86
 %else
 # also s/alpha.*/alpha/, but we use only "alpha" arch for now
-%define		gscpu		%{_target_cpu}
+%define		gscpu		%(echo %{_target_cpu} | sed -e 's/amd64/x86_64/;s/ppc/powerpc/')
 %endif
 
 %description
