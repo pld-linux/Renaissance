@@ -1,10 +1,11 @@
 Summary:	GNUstep Renaissance library
+Summary(pl):	Biblioteka GNUstep Renaissance
 Name:		Renaissance
 Version:	0.8.0
 Release:	1
 License:	GPL
-Group:		Development/Libraries
-Source0:		http://www.gnustep.it/Renaissance/Download/%{name}-%{version}.tar.gz
+Group:		Libraries
+Source0:	http://www.gnustep.it/Renaissance/Download/%{name}-%{version}.tar.gz
 # Source0-md5:	520d8fe210491b5646bb4743a72560b1
 URL:		http://www.gnustep.it/Renaissance/
 BuildRequires:	gnustep-gui-devel >= 0.9.1
@@ -22,20 +23,31 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %endif
 
 %description
-GNUstep Renaissance is free software (GNU LGPL), and part of the GNUstep
-project. It is a development framework which runs on top of the GNUstep
-libraries. It also works on top of the Apple OSX Cocoa libraries, providing an
-opaque layer to write portable applications.
+GNUstep Renaissance is free software (GNU LGPL), and part of the
+GNUstep project. It is a development framework which runs on top of
+the GNUstep libraries. It also works on top of the Apple OSX Cocoa
+libraries, providing an opaque layer to write portable applications.
+
+%description -l pl
+GNUstep Renaissance to wolnodostêpne oprogramowanie (GNU LGPL) i czê¶æ
+projektu GNUstep. Jest to szkielet programistyczny dzia³aj±cy w
+oparciu o biblioteki GNUstepa. Mo¿e dzia³aæ tak¿e w oparciu o Cocoa
+z OSX Apple'a, co daje nieprzezroczyst± warstwê do pisania przeno¶nych
+aplikacji.
 
 %package devel
-Summary:	GNUstep Renaissance headers and libs
+Summary:	Header files for GNUstep Renaissance library
+Summary(pl):	Pliki nag³ówkowe biblioteki GNUstep Renaissance
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Header files required to build applications against the GNUstep Renaissance
-library.
+Header files required to build applications against the GNUstep
+Renaissance library.
 
+%description devel -l pl
+Pliki nag³ówkowe potrzebne do budowania aplikacji z u¿yciem biblioteki
+GNUstep Renaissance.
 
 %prep
 %setup -q 
@@ -61,8 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog ANNOUNCE  Documentation  README  TODO AUTHORS   NOTES.OSX 
-
+%doc ChangeLog ANNOUNCE Documentation README TODO AUTHORS NOTES.OSX 
 
 %dir %{_prefix}/System/Applications/GSMarkupBrowser.app
 %attr(755,root,root) %{_prefix}/System/Applications/GSMarkupBrowser.app/GSMarkupBrowser
@@ -74,7 +85,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}
 %attr(755,root,root) %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}/GSMarkupBrowser
 %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}/*.openapp
-
 
 %dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app
 %attr(755,root,root) %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/GSMarkupLocalizableStrings
