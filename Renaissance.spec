@@ -40,6 +40,7 @@ Summary:	Header files for GNUstep Renaissance library
 Summary(pl):	Pliki nag³ówkowe biblioteki GNUstep Renaissance
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	gnustep-gui-devel >= 0.9.1
 
 %description devel
 Header files required to build applications against the GNUstep
