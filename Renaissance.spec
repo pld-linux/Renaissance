@@ -76,6 +76,29 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog ANNOUNCE Documentation README TODO AUTHORS NOTES.OSX 
 
+%dir %{_prefix}/System/Applications/GSMarkupBrowser.app
+%attr(755,root,root) %{_prefix}/System/Applications/GSMarkupBrowser.app/GSMarkupBrowser
+%dir %{_prefix}/System/Applications/GSMarkupBrowser.app/Resources
+%{_prefix}/System/Applications/GSMarkupBrowser.app/Resources/*.desktop
+%{_prefix}/System/Applications/GSMarkupBrowser.app/Resources/*.plist
+%dir %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}
+%dir %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}
+%dir %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}
+%attr(755,root,root) %{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}/GSMarkupBrowser
+%{_prefix}/System/Applications/GSMarkupBrowser.app/%{gscpu}/%{gsos}/%{libcombo}/*.openapp
+
+%dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app
+%attr(755,root,root) %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/GSMarkupLocalizableStrings
+%dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/Resources
+%{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/Resources/*.desktop
+%{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/Resources/*.plist
+
+%dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/%{gscpu}
+%dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/%{gscpu}/%{gsos}
+%dir %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/%{gscpu}/%{gsos}/%{libcombo}
+%attr(755,root,root) %{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/%{gscpu}/%{gsos}/%{libcombo}/GSMarkupLocalizableStrings
+%{_prefix}/System/Applications/GSMarkupLocalizableStrings.app/%{gscpu}/%{gsos}/%{libcombo}/*.openapp
+
 %{_prefix}/System/Library/Libraries/%{gscpu}/%{gsos}/%{libcombo}/lib*.so.*
 
 %files devel
