@@ -1,5 +1,5 @@
 Summary:	GNUstep Renaissance library
-Summary(pl.UTF-8):   Biblioteka GNUstep Renaissance
+Summary(pl.UTF-8):	Biblioteka GNUstep Renaissance
 Name:		Renaissance
 Version:	0.8.0
 Release:	5
@@ -37,7 +37,7 @@ aplikacji.
 
 %package devel
 Summary:	Header files for GNUstep Renaissance library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki GNUstep Renaissance
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki GNUstep Renaissance
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnustep-gui-devel >= 0.9.1
