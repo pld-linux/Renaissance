@@ -1,5 +1,5 @@
 Summary:	GNUstep Renaissance library
-Summary(pl):	Biblioteka GNUstep Renaissance
+Summary(pl.UTF-8):   Biblioteka GNUstep Renaissance
 Name:		Renaissance
 Version:	0.8.0
 Release:	5
@@ -28,16 +28,16 @@ GNUstep project. It is a development framework which runs on top of
 the GNUstep libraries. It also works on top of the Apple OSX Cocoa
 libraries, providing an opaque layer to write portable applications.
 
-%description -l pl
-GNUstep Renaissance to wolnodostÍpne oprogramowanie (GNU LGPL) i czÍ∂Ê
-projektu GNUstep. Jest to szkielet programistyczny dzia≥aj±cy w
-oparciu o biblioteki GNUstepa. Moøe dzia≥aÊ takøe w oparciu o Cocoa
-z OSX Apple'a, co daje nieprzezroczyst± warstwÍ do pisania przeno∂nych
+%description -l pl.UTF-8
+GNUstep Renaissance to wolnodostƒôpne oprogramowanie (GNU LGPL) i czƒô≈õƒá
+projektu GNUstep. Jest to szkielet programistyczny dzia≈ÇajƒÖcy w
+oparciu o biblioteki GNUstepa. Mo≈ºe dzia≈Çaƒá tak≈ºe w oparciu o Cocoa
+z OSX Apple'a, co daje nieprzezroczystƒÖ warstwƒô do pisania przeno≈õnych
 aplikacji.
 
 %package devel
 Summary:	Header files for GNUstep Renaissance library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki GNUstep Renaissance
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki GNUstep Renaissance
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnustep-gui-devel >= 0.9.1
@@ -46,8 +46,8 @@ Requires:	gnustep-gui-devel >= 0.9.1
 Header files required to build applications against the GNUstep
 Renaissance library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe potrzebne do budowania aplikacji z uøyciem biblioteki
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe potrzebne do budowania aplikacji z u≈ºyciem biblioteki
 GNUstep Renaissance.
 
 %prep
